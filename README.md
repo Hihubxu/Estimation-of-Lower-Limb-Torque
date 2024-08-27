@@ -51,6 +51,7 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
    - Detailed comments within the code will guide you on how to make these adjustments.
 
 - Re-train the model
+  
 Noted that different versions of tensorflow and CUDA may cause the results to be slightly different from the results in the article.
 ## Environment Requirements
 - **Hardware Requirements**:
