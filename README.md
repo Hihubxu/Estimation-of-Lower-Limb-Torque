@@ -1,12 +1,14 @@
-# Estimation-of-Lower-Limb-Torque
-Real-time analysis of lower limb joint torque using IMU data and deep learning. Combines time-frequency analysis, multi-head self-attention, and Bi-LSTM to estimate hip, knee, and ankle torques with high accuracy 
 # Estimation of Lower Limb Torque: A Novel Hybrid Method Based on Continuous Wavelet Transform and Deep Learning Approach
 
 ## Description
 This project analyzes IMU data using a combination of Continuous Wavelet Transform (CWT) and deep learning methods to estimate lower limb torque during human activities.
 
+## Dataset
+
+[A comprehensive, open-source dataset of lower limb biomechanics in multiple conditions of stairs, ramps, and level-ground ambulation and transitions](https://www.epic.gatech.edu/opensource-biomechanics-camargo-et-al/)
+
+
 ## Usage
-- Reproduce the results
   
 1. **Setup Environment**:
    - Ensure that you meet the hardware and software requirements specified above.
@@ -49,10 +51,8 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
 5. **Optional: Customization**:
    - If you need to adjust parameters (e.g., model architecture, CWT settings, dataset split ratios), you can modify the corresponding sections in the scripts before running them.
    - Detailed comments within the code will guide you on how to make these adjustments.
-
-- Re-train the model
   
-Noted that different versions of tensorflow and CUDA may cause the results to be slightly different from the results in the article.
+`Noted that different versions of tensorflow and CUDA may cause the results to be slightly different from the results in the article.`
 ## Environment Requirements
 - **Hardware Requirements**:
   - 12th Gen Intel® Core™ i9-12900K Processor, clock speed 3.20 GHz
@@ -73,3 +73,9 @@ Noted that different versions of tensorflow and CUDA may cause the results to be
 - `1_imu_filtering.py`: Filters IMU data from `1_normalization_AB0_rampascent.csv`.
 - `2_imu_data_expansion.py`: Expands IMU data from `2_filtering_AB0_e_rampascent_imu.csv`.
 - `3_cs-104507-peerj_code_cwt_1dcnn_03.py`: Splits the dataset into training, validation, and test sets; processes data with CWT; implements the deep learning model; and evaluates results.
+
+  
+## Email:
+
+If you have any questions, please email to: [shuxu@mail.ustc.edu.cn](mailto:shuxu@mail.ustc.edu.cn)
+
