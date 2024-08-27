@@ -5,8 +5,7 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
 
 ## Dataset
 
-[A comprehensive, open-source dataset of lower limb biomechanics in multiple conditions of stairs, ramps, and level-ground ambulation and transitions](https://www.epic.gatech.edu/opensource-biomechanics-camargo-et-al/),([Processed data/1_normali_zation_AB0_rampascent.csv](/Processed%20data/1_normali_zation_AB0_rampascent.csv)),https://github.com/Hihubxu/Estimation-of-Lower-Limb-Torque/blob/main/Processed%20data/2_filtering_AB0_e_rampascent_imu.csv
-
+[A comprehensive, open-source dataset of lower limb biomechanics in multiple conditions of stairs, ramps, and level-ground ambulation and transitions](https://www.epic.gatech.edu/opensource-biomechanics-camargo-et-al/),([1_normali_zation_AB0_rampascent.csv](/Processed%20data/1_normali_zation_AB0_rampascent.csv)),([2_filtering_AB0_e_rampascent_imu.csv](/Processed%20data/2_filtering_AB0_e_rampascent_imu.csv))
 
 ## Usage
   
