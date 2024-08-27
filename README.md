@@ -69,8 +69,8 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
 - `3_imu_data_expansion_AB0_rampascent_imu.csv`: Expanded IMU data, serving as the complete dataset.
 
 ### Related Programs
-- `1_imu_filtering.py`: Filters IMU data from `1_normalization_AB0_rampascent.csv`.
-- `2_imu_data_expansion.py`: Expands IMU data from `2_filtering_AB0_e_rampascent_imu.csv`.
+- [`1_imu_filtering.py`](1_imu_filtering.py): Filters IMU data from [`1_normalization_AB0_rampascent.csv`](/Processed%20data/1_normali_zation_AB0_rampascent.csv).
+- [`2_imu_data_expansion.py`](2_imu_data_expansion.py): Expands IMU data from [`2_filtering_AB0_e_rampascent_imu.csv`](/Processed%20data/2_filtering_AB0_e_rampascent_imu.csv).
 - `3_cs-104507-peerj_code_cwt_1dcnn_03.py`: Splits the dataset into training, validation, and test sets; processes data with CWT; implements the deep learning model; and evaluates results.
 
   
