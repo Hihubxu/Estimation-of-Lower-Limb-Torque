@@ -5,6 +5,53 @@ Real-time analysis of lower limb joint torque using IMU data and deep learning. 
 ## Description
 This project analyzes IMU data using a combination of Continuous Wavelet Transform (CWT) and deep learning methods to estimate lower limb torque during human activities.
 
+## Usage
+- Reproduce the results
+  
+1. **Setup Environment**:
+   - Ensure that you meet the hardware and software requirements specified above.
+   - Install the necessary Python libraries by running the following command:
+     ```bash
+     pip install numpy pandas tensorflow keras
+     ```
+
+2. **Data Preprocessing**:
+   - **Step 1: Filter IMU Data**  
+     Run the `1_imu_filtering.py` script to filter the raw IMU data contained in `1_normalization_AB0_rampascent.csv`. This step removes noise and unwanted components from the data.
+     ```bash
+     python 1_imu_filtering.py
+     ```
+     After running this script, you will get a new filtered data file.
+
+   - **Step 2: Expand IMU Data**  
+     Use the `2_imu_data_expansion.py` script to expand the filtered IMU data from `2_filtering_AB0_e_rampascent_imu.csv`. This script prepares the data for further processing by adding additional features or data points as required by the model.
+     ```bash
+     python 2_imu_data_expansion.py
+     ```
+     The output will be a file containing the expanded dataset, which is ready for input into the model.
+
+3. **Model Training and Evaluation**:
+   - **Step 3: Train the Model**  
+     Execute the `3_cs-104507-peerj_code_cwt_1dcnn_03.py` script. This script performs several critical tasks:
+     - Splits the dataset into training, validation, and test sets.
+     - Applies Continuous Wavelet Transform (CWT) to the data to extract time-frequency features.
+     - Trains the deep learning model, which includes a convolutional neural network (CNN) for feature extraction, and a Bi-directional Long Short-Term Memory (Bi-LSTM) network with a multi-head self-attention mechanism for sequence modeling.
+     - Evaluates the model's performance based on metrics like RMSE, R², and Pearson correlation coefficient.
+     ```bash
+     python 3_cs-104507-peerj_code_cwt_1dcnn_03.py
+     ```
+
+4. **Results**:
+   - Once the model has been trained and evaluated, the script will output the estimated lower limb torques.
+   - You can compare the predicted torques against the actual values in your dataset to assess the model's accuracy.
+   - Results will be saved in specified output files or displayed directly in the console/graphical plots, depending on how the script is configured.
+
+5. **Optional: Customization**:
+   - If you need to adjust parameters (e.g., model architecture, CWT settings, dataset split ratios), you can modify the corresponding sections in the scripts before running them.
+   - Detailed comments within the code will guide you on how to make these adjustments.
+
+- Re-train the model
+Noted that different versions of tensorflow and CUDA may cause the results to be slightly different from the results in the article.
 ## Environment Requirements
 - **Hardware Requirements**:
   - 12th Gen Intel® Core™ i9-12900K Processor, clock speed 3.20 GHz
