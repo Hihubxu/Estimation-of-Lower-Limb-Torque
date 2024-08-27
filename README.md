@@ -53,13 +53,26 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
   
 `Noted that different versions of tensorflow and CUDA may cause the results to be slightly different from the results in the article.`
 ## Environment Requirements
-- **Hardware Requirements**:
+- **Hardware Requirements**(Recommended):
   - 12th Gen Intel® Core™ i9-12900K Processor, clock speed 3.20 GHz
   - 64 GB system RAM
   - Two NVIDIA GeForce RTX 3090 GPUs, each with 24 GB GDDR6X RAM
 - **Operating System**: Ubuntu 20.04
-- **Python Version**: 3.10
-- **Python Libraries**: `numpy`, `pandas`, `tensorflow`, `keras`
+- **Python Version**(Recommended): 3.9
+  ### Install Python and Required Packages
+
+1. **Install Python**: Ensure Python 3.10 is installed. Download it from [Python's official website](https://www.python.org/downloads/) or your OS package manager.
+
+2. **Set Up a Virtual Environment** (Recommended):
+   - Manage the project's dependencies separately from other Python environments.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+3. **Install Dependencies** :
+   - Use the [requirements.txt](requirements.txt) file to install all necessary libraries.
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 ## File List and Descriptions
 
