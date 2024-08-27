@@ -64,8 +64,8 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
 ## File List and Descriptions
 
 ### Processed Data
-- `1_normalization_AB0_rampascent.csv`: Normalized data referenced in the document.
-- `2_filtering_AB0_e_rampascent_imu.csv`: Filtered IMU data.
+- `1_normalization_AB0_rampascent.csv`(/Processed%20data/1_normali_zation_AB0_rampascent.csv): Normalized data referenced in the document.
+- `2_filtering_AB0_e_rampascent_imu.csv`(/Processed%20data/2_filtering_AB0_e_rampascent_imu.csv): Filtered IMU data.
 - `3_imu_data_expansion_AB0_rampascent_imu.csv`: Expanded IMU data, serving as the complete dataset.
 
 ### Related Programs
