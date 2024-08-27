@@ -18,14 +18,14 @@ This project analyzes IMU data using a combination of Continuous Wavelet Transfo
 
 2. **Data Preprocessing**:
    - **Step 1: Filter IMU Data**  
-     Run the [`1_imu_filtering.py`](1_imu_filtering.py) script to filter the raw IMU data contained in `1_normalization_AB0_rampascent.csv`. This step removes noise and unwanted components from the data.
+     Run the [`1_imu_filtering.py`](1_imu_filtering.py) script to filter the raw IMU data contained in [`1_normalization_AB0_rampascent.csv`](/Processed%20data/1_normali_zation_AB0_rampascent.csv). This step removes noise and unwanted components from the data.
      ```bash
      python 1_imu_filtering.py
      ```
      After running this script, you will get a new filtered data file.
 
    - **Step 2: Expand IMU Data**  
-     Use the [`2_imu_data_expansion.py`](2_imu_data_expansion.py) script to expand the filtered IMU data from `2_filtering_AB0_e_rampascent_imu.csv`. This script prepares the data for further processing by adding additional features or data points as required by the model.
+     Use the [`2_imu_data_expansion.py`](2_imu_data_expansion.py) script to expand the filtered IMU data from [`2_filtering_AB0_e_rampascent_imu.csv`](/Processed%20data/2_filtering_AB0_e_rampascent_imu.csv). This script prepares the data for further processing by adding additional features or data points as required by the model.
      ```bash
      python 2_imu_data_expansion.py
      ```
